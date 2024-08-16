@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: none;
+  }
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #467745;
+    background-color: #C0EBF9;
+}
+
+#root {
+    margin: 100px auto;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.checkbox-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+
+.label-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+input.subject {
+    font-weight: medium;
+    font-size: 16px;
+    max-width: 600px;
+    height: 64px;
+    padding: 20px;
+}
+
+textarea {
+    font-weight: regular;
+    font-size: 16px;
+    max-width: 600px;
+    min-width: 400;
+    height: 120px;
+    min-height: 120px;
+    padding: 20px;
+}
+
+div.checkbox-checkbox {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 20px;
+    height: 40px;
+}
+
+label {
+    font-weight: regular;
+    font-size: 16px;
+    /* break automatically!*/
+}
+
+button {
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+    width: 280px;
+    height: 80px;
+    background-color: #467745;
+    color: #C0EBF9;
+    letter-spacing: 0.2em;
+    justify-self: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+::placeholder {
+    color: #4677454f;
+}
+
+span {
+    text-decoration: underline;
+}
+
+  @media (max-width: 640px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    
+    #root {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    h1 {
+      text-align: left;
+    }
+  
+    input {
+      max-width: 100vw;
+      height: 40px;
+    }
+
+    textarea {
+        max-width: 100vw;
+        height: 40px;
+    }
+
+    label {
+        margin-left: 20px;
+    }
+
+    div.checkbox-checkbox {
+        height: 40px;
+        margin-left: 0px;
+    }
+
+    .checkbox-div {
+        margin-left: 0px;
+    }
+    
+  }
